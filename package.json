@@ -30,6 +30,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
     "start:dev": "sirv public --dev",
+    "icons": "cp -r icons/** public",
     "html": "html-minifier --file-ext html --input-dir src --output-dir public -c html-minifier.conf"
   },
   "dependencies": {

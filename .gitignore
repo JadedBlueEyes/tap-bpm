@@ -1,7 +1,3 @@
 .DS_Store
 node_modules
 public/
-!public/*.png
-!public/*.jpg
-!public/*.ico
-!public/*.svg

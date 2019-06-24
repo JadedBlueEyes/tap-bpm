@@ -1,0 +1,41 @@
+{
+  "name": "tap-bpm",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-csso": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.3.1",
+    "svelte": "^3.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev",
+    "html": "html-minifier --file-ext html --input-dir src --output-dir public -c html-minifier.conf"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "express": "^4.17.0",
+    "page": "^1.11.4"
+  },
+  "browserslist": "last 3 years, >1%"
+}

@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "page": "^1.11.4"
   },
   "browserslist": "last 3 years, >1%"
